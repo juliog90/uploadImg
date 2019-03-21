@@ -30,7 +30,8 @@
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -38,14 +39,14 @@
             android:id="@+id/btnBuscar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_marginTop="70sp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30sp">
-        </Button>
+            android:layout_marginTop="70sp"
+            android:layout_marginRight="30sp"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
-
-    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.design.widget.CoordinatorLayout>
